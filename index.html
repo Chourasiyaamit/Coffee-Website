@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking Font Awesome for icon -->
+    <title>Coffee Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Linking Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header / Navbar -->
+    <header>
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">☕ Coffee</h2>
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero-section">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="title">Best Coffee</h2>
+                    <h3 class="subtitle">Make your day great with our special coffee!</h3>
+                    <p class="description">Welcome to our coffee paradise, where
+                        every bean tells a story and every cup sparks joy.
+                    </p>
+
+                    <div class="buttons">
+                        <a href="#" class="button order-now">Order Now</a>
+                        <a href="#" class="button contact-us">Contact Us</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="images/coffee-hero-section.png" alt="Coffee image" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section-->
+        <section class="about-section" id="about">
+            <div class="section-content">
+                <div class="about-image-wrapper">
+                    <img src="images/about-image.jpg" alt="About-image" class="about-image">
+                </div>
+                <div class="about-details">
+                    <h2 class="section-title">About Us</h2>
+                    <p class="text">Welcome to Coffee House in Chembur, Mumbai —
+                        your cozy retreat for exceptional coffee and meaningful connections.
+                        <br>
+                        <br>
+                        We are passionate about crafting the perfect cup of coffee using carefully
+                        selected beans and expert brewing techniques. Our inviting space is designed
+                        for coffee lovers, friends, and conversation seekers to relax, unwind, and feel at home.
+                        Whether you're here to catch up with friends, work quietly, or simply savor a
+                        moment of calm, we provide a warm atmosphere paired with friendly
+                        service and delicious offerings. At Coffee House, every cup is an experience,
+                        and every visit is a chance to create memories.
+                    </p>
+                    <div class="social-link-list">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu-section" id="menu">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="section-content">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="images/hot-beverages.png" alt="hot-beverages" class="menu-image">
+                        <h3 class="name">Hot Beverages</h3>
+                        <p class="text">Wide range of steaming hot coffee to
+                            make you fresh and light.</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/cold-beverages.png" alt="cold-beverages" class="menu-image">
+                        <h3 class="name">Cold Beverages</h3>
+                        <p class="text">Creamy and forthy cold coffee to make you cool.</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/fruit_refreshment.png" alt="refreshment" class="menu-image">
+                        <h3 class="name">Refreshment</h3>
+                        <p class="text">Fruit and icy refreshing drink to make feel refresh.</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/special-combo.png" alt="special-combo" class="menu-image">
+                        <h3 class="name">Special Combos</h3>
+                        <p class="text">Your favorite eating and drinking combinations.</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/desserts.png" alt="desserts" class="menu-image">
+                        <h3 class="name">Desserts</h3>
+                        <p class="text">Satiate your palate and take you on a culinary treat.</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/burger-frenchfries.png" alt="burger-frenchfries" class="menu-image">
+                        <h3 class="name">Burger & French Fries</h3>
+                        <p class="text">Quick bites to satisfy your small size hunger.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="testimonial-section" id="testimonials">
+            <h2 class="section-title">Testimonials</h2>
+            <div class="section-content">
+                <div class="slider-container swiper">
+                    <!-- <div class="slider-wrapper"> -->
+                    <ul class="testimonials-list swiper-wrapper">
+                        <li class="testimonial swiper-slide">
+                            <img src="images/girl-1.avif" alt="user-1" class="user-image">
+                            <h3 class="name">Isha Kapoor</h3>
+                            <i class="feedback">“Such a charming café! I love how they pay attention to details
+                                from latte art to table service. Can't wait to come back.”</i>
+                        </li>
+                        <li class="testimonial swiper-slide">
+                            <img src="images/guy-1.jpg" alt="user-2" class="user-image">
+                            <h3 class="name"> Kabir Joshi</h3>
+                            <i class="feedback">“Smooth coffee, chill music, and super friendly staff.
+                                A perfect place to unwind or catch up with someone.”</i>
+                        </li>
+                        <li class="testimonial swiper-slide">
+                            <img src="images/guy-2.jpg" alt="user-3" class="user-image">
+                            <h3 class="name"> Rohan Mehta</h3>
+                            <i class="feedback">“Absolutely loved the vibe and the aroma the moment I walked in!
+                                The cappuccino was perfect and the staff made me feel at home.”</i>
+                        </li>
+                        <li class="testimonial swiper-slide">
+                            <img src="images/girl-2.png" alt="user-4" class="user-image">
+                            <h3 class="name"> Ananya Desai</h3>
+                            <i class="feedback">“This place is my new favorite corner for quiet work and amazing
+                                coffee.The ambience is warm, and the cold brew is just wow!”</i>
+                        </li>
+                        <li class="testimonial swiper-slide">
+                            <img src="images/girl-3.png" alt="user-5" class="user-image">
+                            <h3 class="name">Neha Sood</h3>
+                            <i class="feedback">“A hidden gem! The pastries were fresh, and the barista really knows
+                                their craft. Will definitely bring my friends here.”</i>
+                        </li>
+                        <li class="testimonial swiper-slide">
+                            <img src="images/guy-3.avif" alt="user-6" class="user-image">
+                            <h3 class="name">Arjun Malhotra</h3>
+                            <i class="feedback">“Tried the hazelnut latte hands down the best I've had in the
+                                city! Great service and cozy interiors. Highly recommend it.”</i>
+                        </li>
+                    </ul>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section" id="gallery">
+            <h2 class="section-title">Gallery</h2>
+            <div class="section-content">
+                <ul class="gallery-list">
+                    <li class="gallery-item">
+                        <img src="images/gallery-1.jpg" alt="gallery-1" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/gallery-2.jpg" alt="gallery-2" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/gallery-3.jpg" alt="gallery-3" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/gallery-4.jpg" alt="gallery-4" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/gallery-5.jpg" alt="gallery-5" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/gallery-6.jpg" alt="gallery-6" class="gallery-image">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact us Section -->
+        <section class="contact-section" id="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="section-content">
+                <ul class="contact-info-list">
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Road No - 10, Chembur Mumbai - 400074 </p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>info@coffeeshop74.com </p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(+91) 720-0000-000 </p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Tuesday - Sunday: 9:00 AM - 7:00 PM</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-shop-lock"></i>
+                        <p>Monday : Closed </p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>www.coffeeshop74.com </p>
+                    </li>
+                </ul>
+
+                <form action="#" class="contact-form">
+                    <input type="text" placeholder="Your Name" class="form-input" required>
+                    <input type="email" placeholder="Your email" class="form-input" required>
+                    <textarea placeholder="Your Message" class="form-input" required></textarea>
+                    <button class="submit-button">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text">© 2025 Coffee Shop</p>
+
+                <div class="social-link-list">
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+
+                <p class="policy-text">
+                    <a href="#" class="policy-link">Privacy Policy</a>
+                    <span class="separator">.</span>
+                    <a href="#" class="policy-link">Refund Policy</a>
+                </p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Linking Swiper Script-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
